@@ -1,0 +1,85 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Console\"><param name=\"ios-package\" value=\"CDVLogger\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"OSC\"><param name=\"ios-package\" value=\"CDVOSC\" /></feature>",
+                            "count": 1
+                        }
+                    ],
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"Muse\"><param name=\"ios-package\" value=\"CDVMuse\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "framework": {
+                "parents": {
+                    "ExternalAccessory.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "libc++.dylib": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "libMuse.a": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "libicucore.dylib": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "Security.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "CFNetwork.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.hellojihyun.muse"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.hellojihyun.muse"
+        },
+        "com.hellojihyun.cordova.plugin.Muse": {
+            "PACKAGE_NAME": "com.hellojihyun.muse"
+        },
+        "nl.sylvain.cordova.osc": {
+            "PACKAGE_NAME": "com.hellojihyun.muse"
+        }
+    },
+    "dependent_plugins": {}
+}

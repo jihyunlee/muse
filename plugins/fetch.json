@@ -1,0 +1,37 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-console": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/apache/cordova-plugin-console.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.hellojihyun.cordova.plugin.Muse": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jihyunlee/Muse-Cordova-Plugin.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "nl.sylvain.cordova.osc": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sy1vain/cordova-osc-plugin.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}
