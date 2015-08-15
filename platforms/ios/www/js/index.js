@@ -66,7 +66,7 @@ function registerData() {
       data.forEach(function(d) {
         if (d.hasOwnProperty("concentration")) {
           var concentration = parseFloat(d.concentration).toFixed(2);
-          sendOSC('c'+concentration);
+          sendOSC('a'+concentration);
           document.getElementById('concentration').innerHTML = concentration;
         } else if (d.hasOwnProperty('mellow')) {
           var mellow = parseFloat(d.mellow).toFixed(2);
@@ -84,11 +84,11 @@ function registerData() {
           document.getElementById('horseshoe').innerHTML = text;
         } else if (d.hasOwnProperty('alphaRelative')) {
           var alpha = getMean(d.alphaRelative);
-          sendOSC('a'+alpha);
+          sendOSC('ha'+alpha);
           document.getElementById('alphaRelative').innerHTML = alpha;
         } else if (d.hasOwnProperty('betaRelative')) {
           var beta = getMean(d.betaRelative);
-          sendOSC('b'+beta);
+          sendOSC('hb'+beta);
           document.getElementById('betaRelative').innerHTML = beta;
         } else if (d.hasOwnProperty('deltaRelative')) {
           var delta = getMean(d.deltaRelative);
@@ -100,7 +100,7 @@ function registerData() {
           document.getElementById('thetaRelative').innerHTML = theta;
         } else if (d.hasOwnProperty('gammaRelative')) {
           var gamma = getMean(d.gammaRelative);
-          sendOSC('g'+gamma);
+          sendOSC('hg'+gamma);
           document.getElementById('gammaRelative').innerHTML = gamma;
         }
       });

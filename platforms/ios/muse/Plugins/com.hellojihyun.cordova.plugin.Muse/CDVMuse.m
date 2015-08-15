@@ -249,7 +249,7 @@
 //			NSLog(@"received::Eeg %@", str);
 			break;
 		case IXNMuseDataPacketTypeDroppedAccelerometer:
-			NSLog(@"received::DroppedAccelerometer %@", str);
+//			NSLog(@"received::DroppedAccelerometer %@", str);
 			break;
 		case IXNMuseDataPacketTypeDroppedEeg:
 			NSLog(@"received::DroppedEeg %@", str);
@@ -276,7 +276,7 @@
 			NSLog(@"received::GammaAbsolute %@", str);
 			break;
 		case IXNMuseDataPacketTypeAlphaRelative:
-			NSLog(@"received::AlphaRelative %@", str);
+//			NSLog(@"received::AlphaRelative %@", str);
 			[packets addObject:[NSDictionary dictionaryWithObject:str forKey:@"alphaRelative"]];
 			break;
 		case IXNMuseDataPacketTypeBetaRelative:
